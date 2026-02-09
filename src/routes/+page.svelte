@@ -17,7 +17,7 @@
 	>
 		{#each query.data as recipe}
 			<a
-				href={`/recipes/${recipe._id}`}
+				href={`/recipes/${recipe.slug}`}
 				class="group hover:outline-primary-700 relative flex max-h-64 w-full flex-col overflow-hidden rounded no-underline shadow-lg hover:outline-2"
 			>
 				<img

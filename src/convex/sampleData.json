@@ -8,7 +8,7 @@
 		"createdAt": "2025-10-03T14:25:49.009+00:00",
 		"updatedAt": "2025-10-17T10:10:56.291+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "17450dfc-1245-49b3-8f0d-4b8532dfb7b9",
+		"slug": "todo-kjottdeig-gryte-med-potet",
 		"preparationTime": 1
 	},
 	{
@@ -20,7 +20,7 @@
 		"createdAt": "2025-08-19T06:52:01.181+00:00",
 		"updatedAt": "2025-08-19T07:02:39.897+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "2d549b25-126f-48da-8c2d-68515dc91583",
+		"slug": "marry-me-med-sommerkoteletter",
 		"preparationTime": 1
 	},
 	{
@@ -32,7 +32,7 @@
 		"createdAt": "2025-06-26T09:55:40.114+00:00",
 		"updatedAt": "2025-06-26T09:56:28.757+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "e4fd050d-6b23-441e-88ff-5cd926b8b647",
+		"slug": "kremet-fiskesuppe",
 		"preparationTime": 1
 	},
 	{
@@ -44,7 +44,7 @@
 		"createdAt": "2025-03-31T09:38:11.301+00:00",
 		"updatedAt": "2025-06-24T19:11:52.801+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "b032c7c1-3547-4426-acae-da1c184323fc",
+		"slug": "todo-pasta-brokkoliane-2",
 		"preparationTime": 1
 	},
 	{
@@ -56,7 +56,7 @@
 		"createdAt": "2025-05-16T12:01:56.872+00:00",
 		"updatedAt": "2025-05-16T12:11:57.067+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "5d680ebd-bfcc-4b81-ada7-5356840e7379",
+		"slug": "kyllingwok-med-brokkoli",
 		"preparationTime": 1
 	},
 	{
@@ -68,7 +68,7 @@
 		"createdAt": "2025-05-16T13:35:41+00:00",
 		"updatedAt": "2025-05-16T11:48:36.057+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "7ba98a0e-2a34-48b2-a23c-28f500cb33a5",
+		"slug": "tomatsuppe-med-kokt-egg",
 		"preparationTime": 1
 	},
 	{
@@ -80,7 +80,7 @@
 		"createdAt": "2025-03-04T22:30:04.237+00:00",
 		"updatedAt": "2025-03-22T16:16:07.117+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "1a8bf356-e92a-4df3-835a-e2d2a35d58a4",
+		"slug": "kyllingcurry-med-sotpotet",
 		"preparationTime": 1
 	},
 	{
@@ -92,7 +92,7 @@
 		"createdAt": "2025-02-13T16:36:05.015+00:00",
 		"updatedAt": "2025-02-20T18:29:22.315+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "ee75a757-9d41-4b92-9cba-5aa871958fcf",
+		"slug": "potetsuppe-todo",
 		"preparationTime": 1
 	},
 	{
@@ -104,7 +104,7 @@
 		"createdAt": "2025-01-07T09:20:19.625+00:00",
 		"updatedAt": "2025-02-13T15:02:27.887+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "cea17924-bf3f-427a-b6ee-1c51e16b3620",
+		"slug": "sosekjott",
 		"preparationTime": 1
 	},
 	{
@@ -116,7 +116,7 @@
 		"createdAt": "2025-02-11T11:23:12.375+00:00",
 		"updatedAt": "2025-02-12T06:15:35.588+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "694925bd-cc44-4980-8b14-48fad6eacb62",
+		"slug": "pytt-i-panne",
 		"preparationTime": 1
 	},
 	{
@@ -128,7 +128,7 @@
 		"createdAt": "2024-11-05T13:54:44.45+00:00",
 		"updatedAt": "2025-02-06T10:28:14.558+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "157d0156-5991-442d-9bc8-48bafdb75e72",
+		"slug": "polsegryte",
 		"preparationTime": 1
 	},
 	{
@@ -140,7 +140,7 @@
 		"createdAt": "2023-11-10T09:39:28.733+00:00",
 		"updatedAt": "2025-01-16T22:45:50.912+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "08ce5cbe-fca8-40d8-ba1b-141967674a06",
+		"slug": "enkel-ramen",
 		"preparationTime": 1
 	},
 	{
@@ -152,7 +152,7 @@
 		"createdAt": "2023-08-25T10:33:29.441+00:00",
 		"updatedAt": "2024-12-27T12:25:35.969+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "6753a966-c432-46c9-8dc1-5f0753e73714",
+		"slug": "kremet-fiskegryte-med-laks-3",
 		"preparationTime": 1
 	},
 	{
@@ -164,7 +164,7 @@
 		"createdAt": "2024-11-05T11:59:34.319+00:00",
 		"updatedAt": "2024-12-09T13:34:00.601+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "8d9385b1-46da-45e7-9865-355705ae4ec1",
+		"slug": "kalkun-med-sot-saus-sotpotetmos",
 		"preparationTime": 1
 	},
 	{
@@ -176,7 +176,7 @@
 		"createdAt": "2023-12-14T10:56:32.95+00:00",
 		"updatedAt": "2024-12-09T13:15:41.633+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "93f476f8-0b4e-4952-b503-71b70a554a50",
+		"slug": "pannekaker",
 		"preparationTime": 1
 	},
 	{
@@ -188,7 +188,7 @@
 		"createdAt": "2023-12-14T10:50:57.347+00:00",
 		"updatedAt": "2024-10-11T19:35:02.614+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "c5029174-835e-4da9-9e1d-b6753a04695d",
+		"slug": "fiskegryte",
 		"preparationTime": 1
 	},
 	{
@@ -200,7 +200,7 @@
 		"createdAt": "2023-08-18T20:42:27.758+00:00",
 		"updatedAt": "2024-10-11T09:38:17.034+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "b71d799e-8c99-4369-9b3a-b9a00cf5e9cb",
+		"slug": "pizza",
 		"preparationTime": 1
 	},
 	{
@@ -212,7 +212,7 @@
 		"createdAt": "2024-01-04T23:28:18.026+00:00",
 		"updatedAt": "2024-05-16T12:17:51.477+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "6e445632-9050-42ef-a7ee-12672d96286e",
+		"slug": "spinatsuppe",
 		"preparationTime": 1
 	},
 	{
@@ -224,7 +224,7 @@
 		"createdAt": "2024-01-04T23:27:34.903+00:00",
 		"updatedAt": "2024-05-16T12:17:41.768+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "52fea503-8630-455a-878d-cf3d6f43c2b1",
+		"slug": "taco",
 		"preparationTime": 1
 	},
 	{
@@ -236,7 +236,7 @@
 		"createdAt": "2024-02-15T11:23:39.059+00:00",
 		"updatedAt": "2024-02-15T11:23:39.059+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "ee88f30c-9848-4027-8565-3c6fcbaeb2f0",
+		"slug": "skinnstekt-skreirygg-med-selleri-og-potetstappe-og-baconsmor",
 		"preparationTime": 1
 	},
 	{
@@ -248,7 +248,7 @@
 		"createdAt": "2023-08-25T10:22:49.002+00:00",
 		"updatedAt": "2024-01-24T16:29:57.551+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "62fd43d9-9398-4f65-8b80-8e31e63b928d",
+		"slug": "chili-con-carne",
 		"preparationTime": 1
 	},
 	{
@@ -260,7 +260,7 @@
 		"createdAt": "2024-01-09T14:20:25.457+00:00",
 		"updatedAt": "2024-01-18T14:51:17.75+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "76b594da-7c09-46ca-b0e5-511569b08e5a",
+		"slug": "kremet-tagliatelle-med-laks",
 		"preparationTime": 1
 	},
 	{
@@ -272,7 +272,7 @@
 		"createdAt": "2023-08-18T20:42:27.758+00:00",
 		"updatedAt": "2024-01-10T13:07:08.469+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "7fc82508-6434-4d73-bcc2-a00d1488299b",
+		"slug": "fiskegrateng-som-har-en-description-som-snakker-om-kjottgryte",
 		"preparationTime": 1
 	},
 	{
@@ -284,7 +284,7 @@
 		"createdAt": "2024-01-04T23:23:01.274+00:00",
 		"updatedAt": "2024-01-08T14:29:12.92+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "5a4aaee3-fe76-4e73-ab27-b5c43526e986",
+		"slug": "tikka-masala",
 		"preparationTime": 1
 	},
 	{
@@ -296,7 +296,7 @@
 		"createdAt": "2024-01-04T23:26:49.681+00:00",
 		"updatedAt": "2024-01-04T23:26:49.681+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "1c9e8d48-4cf8-4c00-9839-29861236308c",
+		"slug": "kveite-med-agurksalat",
 		"preparationTime": 1
 	},
 	{
@@ -308,7 +308,7 @@
 		"createdAt": "2024-01-04T23:26:01.965+00:00",
 		"updatedAt": "2024-01-04T23:26:01.965+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "840c42f7-d659-4f38-956f-27b3b54ac447",
+		"slug": "helstekt-kalkun-med-hjemmelaget-saus",
 		"preparationTime": 1
 	},
 	{
@@ -320,7 +320,7 @@
 		"createdAt": "2023-12-14T10:43:17.239+00:00",
 		"updatedAt": "2024-01-03T15:09:11.431+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "9150744e-b96a-42b9-b244-3f760bcd1dfb",
+		"slug": "langtidsstekt-ribbe",
 		"preparationTime": 1
 	},
 	{
@@ -332,7 +332,7 @@
 		"createdAt": "2023-08-25T10:32:07.264+00:00",
 		"updatedAt": "2023-09-15T20:22:22.033+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "3443c34a-ebf8-4233-a1b9-5e434e8a79dd",
+		"slug": "pasta-bolognese",
 		"preparationTime": 1
 	},
 	{
@@ -344,7 +344,7 @@
 		"createdAt": "2023-08-21T06:59:40.518+00:00",
 		"updatedAt": "2023-09-15T20:19:11.632+00:00",
 		"userId": "ed5e39dc-409e-4671-91fc-8d86ac626e2b",
-		"id": "573c9568-1708-4f5a-952a-a228aa830e9d",
+		"slug": "hjemmelagde-seikarbonader-med-stuede-gronnsaker",
 		"preparationTime": 1
 	}
 ]

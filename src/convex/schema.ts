@@ -7,8 +7,8 @@ export default defineSchema({
 		isCompleted: v.boolean()
 	}),
 	recipes: defineTable({
-		_id: v.id('recipes'),
 		title: v.string(),
+		slug: v.string(),
 		description: v.string(),
 		ingredients: v.string(),
 		instructions: v.string(),
@@ -17,5 +17,5 @@ export default defineSchema({
 		updatedAt: v.string(),
 		userId: v.string(),
 		preparationTime: v.number()
-	})
+	}).index('by_slug', ['slug'])
 });

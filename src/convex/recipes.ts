@@ -9,9 +9,12 @@ export const get = query({
 	}
 });
 
-export const getById = query({
-	args: { id: v.id('recipes') },
-	handler: async (ctx, { id }) => {
-		return await ctx.db.get('recipes', id);
+export const getBySlug = query({
+	args: { slug: v.string() },
+	handler: async (ctx, args) => {
+		return await ctx.db
+			.query('recipes')
+			.withIndex('by_slug', (q) => q.eq('slug', args.slug))
+			.first();
 	}
 });
