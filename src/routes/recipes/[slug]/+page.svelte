@@ -3,8 +3,9 @@
 	import { HeartIcon, PrinterIcon, StarIcon } from 'lucide-svelte';
 	import type { PageProps } from './$types';
 
-	let { data } = $props();
-	const { recipe } = data;
+	let { data }: PageProps = $props();
+	const { recipe } = $derived(data);
+	$inspect(recipe);
 </script>
 
 {#if recipe}
@@ -12,7 +13,7 @@
 		<section class="relative">
 			<a
 				class="bg-background absolute top-2 right-2 rounded-full p-2 font-bold no-underline opacity-60"
-				href={`/recipes/${recipe.id}/edit`}
+				href={`/recipes/${recipe.slug}/edit`}
 			>
 				<!-- <CookingPot /> -->
 			</a>
@@ -37,7 +38,7 @@
 		</section>
 
 		<div class="flex flex-col gap-4 sm:flex-row">
-			<section class="min-h-64rounded-md sm:w-1/2 md:w-5/12">
+			<section class="min-h-64 rounded-md sm:w-1/2 md:w-5/12">
 				<h2 class="text-muted text-base uppercase">Ingrendienser</h2>
 				<Markdown class="list-disc" data={recipe.ingredients} />
 			</section>

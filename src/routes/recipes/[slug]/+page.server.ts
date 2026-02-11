@@ -7,7 +7,8 @@ export const load: PageServerLoad = async ({ params }) => {
 	const client = new ConvexHttpClient(PUBLIC_CONVEX_URL);
 	console.log('### load recipe with slug', params.slug);
 
-	return {
-		recipe: await client.query(api.recipes.getBySlug, { slug: params.slug })
-	};
+	// return await client.query(api.recipes.getBySlug, { slug: params.slug });
+	const recipe = await client.query(api.recipes.getBySlug, { slug: params.slug });
+	console.log('### recipe', recipe);
+	return { recipe };
 };
