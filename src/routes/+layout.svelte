@@ -3,7 +3,7 @@
 	import '@fontsource/inter/600.css';
 	import '@fontsource/inter/700.css';
 
-	import './layout.css';
+	import '$lib/styles/layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { env } from '$env/dynamic/public';
 	import { setupConvex } from 'convex-svelte';
@@ -18,5 +18,5 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <Header {user} />
 <main class="p-4">
-	{@render children()}
+    {@render children()}
 </main>

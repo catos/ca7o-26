@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme inline {
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+    :root {
+        --foreground: #000000;
+        --background: #ffffff;
+    }
+    
+    [data-theme="dark"] {
+        --foreground: #ffffff;
+        --background: #000000;
+    }
+    
+	body {
+		/* font-family: 'Inter', sans-serif; */
+        /* background-color: var(--color-background);
+        color: var(--color-foreground); */        
+        @apply bg-background text-foreground;
+	}
+}
