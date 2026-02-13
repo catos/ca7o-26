@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { XIcon } from 'lucide-svelte';
+	import { XIcon } from "lucide-svelte";
 </script>
 
 <div class="flex flex-col gap-8">
@@ -13,7 +13,7 @@
 		</p>
 		<h2>The King&apos;s Plan</h2>
 		<p>
-			The king thought long and hard, and finally came up with{' '}
+			The king thought long and hard, and finally came up with{" "}
 			<a href="/ui#">a brilliant plan</a>
 			: he would tax the jokes in the kingdom.
 		</p>
@@ -60,7 +60,7 @@
 
 	<section class="flex flex-col gap-4 rounded border p-8">
 		<h2 class="mt-0">Buttons</h2>
-		<div class="flex flex-wrap gap-4">
+		<div class="flex flex-wrap items-center gap-4">
 			<button class="btn-filled">Filled</button>
 			<button class="btn-outlined">Outlined</button>
 			<button class="btn-icon">
@@ -76,6 +76,16 @@
 		<div>
 			<label for="title">Title</label>
 			<input id="title" name="title" type="text" required placeholder="A short descriptive title" />
+		</div>
+		<div>
+			<label for="disabled">Disabled</label>
+			<input
+				id="disabled"
+				name="disabled"
+				type="text"
+				disabled
+				placeholder="A short disabled input"
+			/>
 		</div>
 		<div>
 			<label for="text">Text</label>

@@ -1,38 +1,50 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /* Tailwind defaults - https://tailwindcss.com/docs/theme#default-theme-variable-reference */
+/* Tailwind color - https://tailwindcss.com/docs/colors */
 @layer base {
 	:root {
 		--spacing: 0.25rem;
 
 		--radius: 1.25rem;
 
-		--foreground: #000000;
-		--background: #ffffff;
+		--foreground: oklch(13% 0.028 261.692);
+		--background: oklch(98.5% 0.002 247.839);
 		--primary: oklch(64.6% 0.222 41.116); /* 600 */
 		/* --primary: oklch(55.3% 0.195 38.402); */ /* 700 */
 		--border: oklch(87.2% 0.01 258.338);
-		--error: oklch(50.5% 0.213 27.518);
+		--error: oklch(57.7% 0.245 27.325);
 	}
 
-	[data-theme='dark'] {
-		--foreground: #ffffff;
-		--background: #000000;
+	[data-theme="dark"] {
+		--foreground: oklch(98.5% 0.002 247.839);
+		--background: oklch(13% 0.028 261.692);
 		/* TODO: rest ... */
 	}
 }
 
 @theme inline {
-	--font-sans: 'Inter', sans-serif;
+	--font-sans: "Inter", sans-serif;
 
 	--color-foreground: var(--foreground);
 	--color-background: var(--background);
+
 	--color-primary: var(--primary);
+	/* --color-primary-foreground: var(--primary-foreground); */
+
 	--color-border: var(--border);
-	--color-error: var(--error);
+	--color-error: hsl(from var(--error) h s l / 80%);
 }
 
 @layer base {
+	* {
+		@apply text-sm md:text-base;
+	}
+
+	*:focus {
+		@apply rounded focus-visible:ring-2 focus-visible:ring-primary/80 focus-visible:ring-offset-4 focus-visible:outline-hidden;
+	}
+
 	body {
 		/* font-family: 'Inter', sans-serif; */
 		/* background-color: var(--color-background);
@@ -93,19 +105,24 @@
 	}
 
 	label {
-		@apply mb-2 block text-sm font-medium text-foreground;
+		@apply mb-2 block font-medium;
+	}
+
+	input,
+	textarea {
+		@apply flex h-10 w-full rounded border-2 border-border bg-background px-3 py-2 placeholder:text-foreground/75 disabled:cursor-not-allowed;
 	}
 
 	input {
-		@apply flex h-10 w-full rounded border-2 border-border bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-foreground/80 focus-visible:ring-2 focus-visible:ring-primary/80 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
+		@apply flex h-10;
 	}
 
 	textarea {
-		@apply flex min-h-20 w-full rounded border-2 border-border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-foreground/80 focus-visible:ring-2 focus-visible:ring-primary/80 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50;
+		@apply flex min-h-20;
 	}
 
 	button {
-		@apply rounded px-4 py-2.5 text-center text-sm font-medium;
+		@apply cursor-pointer rounded px-4 py-2.5 text-center text-sm font-medium;
 	}
 }
 
@@ -115,11 +132,11 @@
 	}
 
 	.btn-outlined {
-		@apply border-2 border-primary hover:bg-primary hover:text-primary;
+		@apply border-2 border-primary hover:bg-primary/20;
 	}
 
 	.btn-icon {
-		@apply flex h-10 w-10 items-center justify-center hover:bg-primary;
+		@apply flex h-10 w-10 items-center justify-center p-2 hover:bg-primary;
 	}
 
 	.btn-link {
