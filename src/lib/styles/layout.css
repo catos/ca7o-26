@@ -1,26 +1,132 @@
 @import 'tailwindcss';
 
+/* Tailwind defaults - https://tailwindcss.com/docs/theme#default-theme-variable-reference */
+@layer base {
+	:root {
+		--spacing: 0.25rem;
+
+		--radius: 1.25rem;
+
+		--foreground: #000000;
+		--background: #ffffff;
+		--primary: oklch(64.6% 0.222 41.116); /* 600 */
+		/* --primary: oklch(55.3% 0.195 38.402); */ /* 700 */
+		--border: oklch(87.2% 0.01 258.338);
+		--error: oklch(50.5% 0.213 27.518);
+	}
+
+	[data-theme='dark'] {
+		--foreground: #ffffff;
+		--background: #000000;
+		/* TODO: rest ... */
+	}
+}
+
 @theme inline {
-    --color-foreground: var(--foreground);
-    --color-background: var(--background);
-    --font-sans: 'Inter', sans-serif;
+	--font-sans: 'Inter', sans-serif;
+
+	--color-foreground: var(--foreground);
+	--color-background: var(--background);
+	--color-primary: var(--primary);
+	--color-border: var(--border);
+	--color-error: var(--error);
 }
 
 @layer base {
-    :root {
-        --foreground: #000000;
-        --background: #ffffff;
-    }
-    
-    [data-theme="dark"] {
-        --foreground: #ffffff;
-        --background: #000000;
-    }
-    
 	body {
 		/* font-family: 'Inter', sans-serif; */
-        /* background-color: var(--color-background);
-        color: var(--color-foreground); */        
-        @apply bg-background text-foreground;
+		/* background-color: var(--color-background);
+        color: var(--color-foreground); */
+		@apply bg-background text-foreground;
+	}
+
+	h1 {
+		@apply mb-4 scroll-m-20 text-3xl tracking-tight md:text-4xl;
+	}
+
+	h2 {
+		@apply mb-4 scroll-m-20 text-2xl tracking-tight md:text-3xl;
+	}
+
+	h3 {
+		@apply mb-4 scroll-m-20 text-xl tracking-tight md:text-2xl;
+	}
+
+	p {
+		@apply mb-5 leading-7;
+	}
+
+	a {
+		@apply font-medium text-foreground underline underline-offset-4;
+	}
+
+	blockquote {
+		@apply mb-5 border-l-2 pl-6 italic;
+	}
+
+	ul {
+		@apply my-6 ml-6 list-disc [&>li]:mt-2;
+	}
+
+	table {
+		@apply w-full table-auto;
+	}
+
+	thead {
+		tr {
+			@apply m-0 border-t bg-slate-900/5 p-0;
+
+			th {
+				@apply border px-4 py-2 text-left font-bold [[align=center]]:text-center [[align=right]]:text-right;
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			@apply m-0 border-t p-0;
+
+			td {
+				@apply border px-4 py-2 text-left [[align=center]]:text-center [[align=right]]:text-right;
+			}
+		}
+	}
+
+	label {
+		@apply mb-2 block text-sm font-medium text-foreground;
+	}
+
+	input {
+		@apply flex h-10 w-full rounded border-2 border-border bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-foreground/80 focus-visible:ring-2 focus-visible:ring-primary/80 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
+	}
+
+	textarea {
+		@apply flex min-h-20 w-full rounded border-2 border-border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-foreground/80 focus-visible:ring-2 focus-visible:ring-primary/80 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:cursor-not-allowed disabled:opacity-50;
+	}
+
+	button {
+		@apply rounded px-4 py-2.5 text-center text-sm font-medium;
+	}
+}
+
+@layer components {
+	.btn-filled {
+		@apply bg-primary hover:bg-primary/90;
+	}
+
+	.btn-outlined {
+		@apply border-2 border-primary hover:bg-primary hover:text-primary;
+	}
+
+	.btn-icon {
+		@apply flex h-10 w-10 items-center justify-center hover:bg-primary;
+	}
+
+	.btn-link {
+		@apply underline underline-offset-4 hover:bg-primary;
+	}
+
+	.btn-destructive {
+		@apply bg-error hover:bg-error/90;
 	}
 }
