@@ -17,7 +17,7 @@
 	}
 
 	[data-theme="dark"] {
-		--foreground: oklch(98.5% 0.002 247.839);
+		--foreground: oklch(96.7% 0.003 264.542);
 		--background: oklch(13% 0.028 261.692);
 		/* TODO: rest ... */
 	}
@@ -127,6 +127,10 @@
 }
 
 @layer components {
+	.container {
+		@apply mx-auto max-w-4xl;
+	}
+
 	.btn-filled {
 		@apply bg-primary hover:bg-primary/90;
 	}

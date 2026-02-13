@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Markdown from '$lib/components/markdown.svelte';
-	import { HeartIcon, PrinterIcon, StarIcon } from 'lucide-svelte';
-	import type { PageProps } from './$types';
+	import Markdown from "$lib/components/markdown.svelte";
+	import { HeartIcon, PrinterIcon, StarIcon } from "lucide-svelte";
+	import type { PageProps } from "./$types";
 
 	let { data }: PageProps = $props();
 	const { recipe } = $derived(data);
@@ -9,10 +9,10 @@
 </script>
 
 {#if recipe}
-	<div class="flex flex-col gap-4 md:gap-6">
+	<div class="container flex flex-col gap-4 md:gap-6">
 		<section class="relative">
 			<a
-				class="bg-background absolute top-2 right-2 rounded-full p-2 font-bold no-underline opacity-60"
+				class="absolute top-2 right-2 rounded-full bg-background p-2 font-bold no-underline opacity-60"
 				href={`/recipes/${recipe.slug}/edit`}
 			>
 				<!-- <CookingPot /> -->

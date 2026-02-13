@@ -10,7 +10,7 @@
 <header
 	class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/60"
 >
-	<nav class="m-auto flex max-w-6xl items-center gap-4 px-6 py-4 text-sm font-semibold">
+	<nav class="container flex items-center gap-4 px-6 py-4 text-sm font-semibold">
 		<a href="/" class="px-4">
 			<Logo class="w-8 min-w-8" />
 		</a>
