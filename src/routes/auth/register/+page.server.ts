@@ -1,11 +1,10 @@
+import { redirect } from "@sveltejs/kit"
 import type { PageServerLoad } from "./$types"
 
 export const load: PageServerLoad = async ({ locals }) => {
-	const recipes = await locals.pb.collection("recipes").getFullList({
-		sort: "-created"
-	})
-
-	return {
-		recipes
+	if (locals.user) {
+		redirect(303, "/")
 	}
+
+	return {}
 }

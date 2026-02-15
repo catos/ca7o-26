@@ -104,8 +104,9 @@
 		}
 	}
 
+	/* TODO: add text-muted ? */
 	label {
-		@apply mb-2 block font-medium;
+		@apply mb-2 block font-medium text-foreground/80;
 	}
 
 	input,
@@ -140,7 +141,7 @@
 	}
 
 	.btn-icon {
-		@apply flex h-10 w-10 items-center justify-center p-2 hover:bg-primary;
+		@apply flex h-10 w-10 items-center justify-center p-2 hover:bg-none;
 	}
 
 	.btn-link {

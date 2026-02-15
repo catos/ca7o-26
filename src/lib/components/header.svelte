@@ -1,10 +1,25 @@
 <script lang="ts">
-	import Logo from "./logo.svelte";
+	import Logo from "./logo.svelte"
 	// import LogoutButton from "$lib/components/logoutButton.svelte";
-	import { twMerge } from "tailwind-merge";
-	import ThemeToggle from "./theme-toggle.svelte";
+	import { twMerge } from "tailwind-merge"
+	import ThemeToggle from "./theme-toggle.svelte"
+	import type { AuthModel } from "pocketbase"
+	import Avatar from "./ui/avatar.svelte"
 
-	let { user } = $props();
+	interface Props {
+		user: AuthModel | null
+	}
+
+	let { user }: Props = $props()
+	let initials = $state("")
+
+	$effect(() => {
+		initials = user?.name
+			.split(" ")
+			.map((part: string) => part[0])
+			.join("")
+			.toUpperCase()
+	})
 </script>
 
 <header
@@ -26,8 +41,8 @@
 
 		<ThemeToggle />
 		{#if user}
-			<button id="profile-popover-trigger" popovertarget="profile-popover">
-				<!-- <Avatar src={avatarUrl} fallback={initials} /> -->
+			<button class="btn-icon" id="profile-popover-trigger" popovertarget="profile-popover">
+				<Avatar src={user.avatar} fallback={initials} />
 			</button>
 			<div
 				id="profile-popover"
